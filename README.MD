@@ -11,7 +11,7 @@ Compile command:
 ```
 ~/go/src/github.com/fractalplatform/fractal$ make all
 ```
-You could get the bin file(ft) from ./build/bin dir. In this case, we rename ft to ft.linux_64. It isn't MUST.
+You could get the bin file[ft] from ./build/bin dir. In this case, we rename ft to ft.linux_64. And you can rename other names which is just needed begin from "ft".
 
 #### **genesis.json**: 
   genesis block's config file
