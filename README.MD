@@ -17,7 +17,23 @@ You could get the bin file(ft) from ./build/bin dir. In this case, we rename ft 
   genesis block's config file
 
 #### **oneStepStartAll.sh**: 
-This script includes the createGenesisNode.sh 
+This script includes the functionality of  createGenesisNode.sh and start.sh. We could just run this file to startup the genesis node and other new nodes.  The command should be:
+```
+oneStepStartAll.sh localIp nodeNum p2pPort httpPort wsPort
+```
+
+-   **localIp**: the local ip address
+-   **nodeNum**: the node number of starting this time
+-   **p2pPort**: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, and so on
+-   **httpPort**: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, and so on
+-   **wsPort**: the begining ws port, the first new node will use the value of wsPort, the second new node is wsPort+1, and so on.
+  \
+  for example: 
+
+```
+#./oneStepStartAll.sh 192.168.1.100 5 10000 11000 12000   // it will startup 5 new nodes
+```
+
 
 #### **createGenesisNode.sh**:
   startup the genesis node, this script should be run before start.sh. And after run this script, you will get the genesis node info, such as: 
