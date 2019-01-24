@@ -17,21 +17,21 @@ You could get the bin file(ft) from ./build/bin dir. In this case, we rename ft 
   genesis block's config file
 
 #### **oneStepStartAll.sh**: 
-This script includes the functionality of  createGenesisNode.sh and start.sh. We could just run this file to startup the genesis node and other new nodes.  The command should be:
+This script includes the functionality of  createGenesisNode.sh and start.sh. We could just run this file to start up the genesis node and other new nodes.  The command should be:
 ```
 oneStepStartAll.sh localIp nodeNum p2pPort httpPort wsPort
 ```
 
 -   **localIp**: the local ip address
 -   **nodeNum**: the node number of starting this time
--   **p2pPort**: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, and so on
--   **httpPort**: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, and so on
+-   **p2pPort**: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, and so on.
+-   **httpPort**: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, and so on.
 -   **wsPort**: the begining ws port, the first new node will use the value of wsPort, the second new node is wsPort+1, and so on.
   \
   for example: 
 
 ```
-#./oneStepStartAll.sh 192.168.1.100 5 10000 11000 12000   // it will startup 5 new nodes
+#./oneStepStartAll.sh 192.168.1.100 5 10000 11000 12000   // it will start up 5 new nodes, which p2p port is from 10000 to 10004, http port is from 11000 to 11004, ws port is from 12000 to 12004.
 ```
 
 
@@ -52,7 +52,7 @@ enode://2252e4edc7d1b57326e9e5fb00fec7ab7b2fde7359e7cbd027175e90512b6dd02a327b1f
 ```
 
 #### start.sh:
-  startup new nodes, which will connect the genesis node. The command should be: \
+  start up new nodes, which will connect the genesis node. The command should be: \
   
 ```
 start.sh nodeNum p2pPort httpPort wsPort
@@ -66,7 +66,7 @@ start.sh nodeNum p2pPort httpPort wsPort
   for example: 
 
 ```
-#./start.sh 5 10000 11000 12000   // it will startup 5 new nodes
+#./start.sh 5 10000 11000 12000   // it will start up 5 new nodes
 ```
 
   
