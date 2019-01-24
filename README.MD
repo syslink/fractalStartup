@@ -4,7 +4,8 @@
 ```
 ft.linux_64 --help   // get help info
 ```
-
+If you are familiar with go language, you could download the souce code of fractal:
+https://github.com/fractalplatform/fractal
 
 #### **genesis.json**: 
   genesis block's config file
