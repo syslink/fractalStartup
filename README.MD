@@ -5,7 +5,13 @@
 ft.linux_64 --help   // get help info
 ```
 If you are familiar with go language, you could download the souce code of fractal:
-https://github.com/fractalplatform/fractal
+https://github.com/fractalplatform/fractal, then you can compile it and get the bin file.\
+Compile command:
+
+```
+~/go/src/github.com/fractalplatform/fractal$ make all
+```
+You could get the bin file(ft) from ./build/bin dir. In this case, we rename ft to ft.linux_64. It isn't MUST.
 
 #### **genesis.json**: 
   genesis block's config file
