@@ -1,5 +1,5 @@
 #### **ft.linux_64**:
-  executable file of fractal
+  executable file of fractal, different release version could be download from:https://github.com/fractalplatform/fractal/releases
   
 ```
 ft.linux_64 --help   // get help info
