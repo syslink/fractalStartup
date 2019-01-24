@@ -1,5 +1,5 @@
 #### **ft.linux_64**:
-  executable file of fractal, different release version could be download from:https://github.com/fractalplatform/fractal/releases
+  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases
   
 ```
 ft.linux_64 --help   // get help info
@@ -14,7 +14,7 @@ Compile command:
 You could get the bin file[ft] from ./build/bin dir. In this case, we rename ft to ft.linux_64. And you can rename other names which is just needed begin from "ft".
 
 #### **genesis.json**: 
-  genesis block's config file
+  genesis block's config file.
 
 #### **oneStepStartAll.sh**: 
 This script includes the functionality of  createGenesisNode.sh and start.sh. We could just run this file to start up the genesis node and other new nodes.  The command should be:
@@ -23,7 +23,7 @@ oneStepStartAll.sh localIp nodeNum p2pPort httpPort wsPort
 ```
 
 -   **localIp**: the local ip address
--   **nodeNum**: the node number of starting this time
+-   **nodeNum**: the new node number, it doesn't include the genesis node.
 -   **p2pPort**: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, and so on.
 -   **httpPort**: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, and so on.
 -   **wsPort**: the begining ws port, the first new node will use the value of wsPort, the second new node is wsPort+1, and so on.
@@ -58,7 +58,7 @@ enode://2252e4edc7d1b57326e9e5fb00fec7ab7b2fde7359e7cbd027175e90512b6dd02a327b1f
 start.sh nodeNum p2pPort httpPort wsPort
 ```
 
--   **nodeNum**: the node number of starting this time
+-   **nodeNum**: the new node number
 -   **p2pPort**: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, and so on
 -   **httpPort**: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, and so on
 -   **wsPort**: the begining ws port, the first new node will use the value of wsPort, the second new node is wsPort+1, and so on.
