@@ -1,8 +1,8 @@
 portStart=$1
 portEnd=$2
-while $portStart <= $portEnd
+
+for i in `seq $portStart $portEnd`
 do
-    ps x | grep $portStart | awk '{print $1}' | xargs kill >./datadir/${portStart}null 2>&1
-    portStart='expr $portStart+1'
+    ps x | grep $i | awk '{print $1}' | xargs kill >./datadir/${i}null 2>&1
 done
 

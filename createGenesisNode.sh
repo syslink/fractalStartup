@@ -1,3 +1,8 @@
+if [ $# -ne 1 ];then
+    echo $0 localIp
+    exit 2
+fi
+
 localIp=$1
 p2pPort=10000
 httpPort=10001
