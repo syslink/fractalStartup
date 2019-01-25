@@ -1,8 +1,8 @@
-#### **ft.linux_64**:
-  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases
+#### **ft.linux_64.***:
+  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases, in this case, we use 0.0.1.1 version for test.
   
 ```
-ft.linux_64 --help   // get help info
+ft.linux_64.0.0.1.1 --help   // get help info
 ```
 If you are familiar with go language, you could download the souce code of fractal:
 https://github.com/fractalplatform/fractal, then you can compile it and get the bin file.\
