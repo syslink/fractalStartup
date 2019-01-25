@@ -1,5 +1,12 @@
 # when start 5 node, the command should be:
-# ./start.sh 5 14000 14100 14200 
+# ./start.sh 5 14000 14100 14200
+
+# Explaination:
+# ./start.sh start.sh nodeNum p2pPort httpPort wsPort 
+  # nodeNum: the new node number
+  # p2pPort: the begining p2p port, the first new node will use the value of p2pPort, the second new node is p2pPort+1, up to p2pPort + nodeNum - 1
+  # httpPort: the begining http port, the first new node will use the value of httpPort, the second new node is httpPort+1, up to httpPort + nodeNum -1
+  # wsPort: the begining ws port, the first new node will use the value of wsPort, the second new node is wsPort+1, up to wsPort + nodeNum + 1
 
 mkdir -p ./datadir
 
