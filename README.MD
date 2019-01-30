@@ -1,8 +1,9 @@
-#### **ft.linux_64.***:
-  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases, in this case, we use 0.0.1.1 version for test.
+## explanation of each file
+#### **ft**:
+  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases.                                                   
   
 ```
-ft.linux_64.0.0.1.1 --help   // get help info
+ft --help   // get help info
 ```
 If you are familiar with go language, you could download the souce code of fractal:
 https://github.com/fractalplatform/fractal, then you can compile it and get the bin file.\
@@ -11,7 +12,7 @@ Compile command:
 ```
 ~/go/src/github.com/fractalplatform/fractal$ make all
 ```
-You could get the bin file[ft] from ./build/bin dir. In this case, we rename ft to ft.linux_64. And you can rename other names which is just needed begin from "ft".
+You could get the bin file[ft] from ./build/bin dir.
 
 #### **genesis.json**: 
   genesis block's config file.
@@ -93,4 +94,27 @@ stop.sh portStart portEnd
 ```
 #./stop.sh 10000 10004   // it will close the node which p2p port between [10000, 10004]
 ```
+## How to join an exist FT blockchain
+Join an exist FT blockchain, just need three file, FT, start.sh and nodes.txt. The contents of nodes.txt is the node connection info metioned above. Then run start.sh.
 
+## How to start up a private FT blockchain
+
+At first, git clone this repository to all of your servers.
+
+
+```
+git clone https://github.com/syslink/fractalStartup
+```
+
+
+- ### Run blockchain on one server 
+You just need run the script oneStepStartAll.sh.
+
+- ### Run blockchain on several servers 
+steps:
+1. On your first server, run oneStepStartAll.sh which will start up genesis node and other nodes as your config.
+2. Copy notes.txt which has been generated on your first server to your other servers.
+3. Run start.sh on these servers metioned on step 2.
+4. Use genesis account creates new accounts and transfer asset to them.
+> Genesis account is configured in genesis.json metioned above.  And we will lanuch a website for you to accomplish these operators conveniently.  Just now, you should use RPC to accomplish these operators.
+5. Use these new accounts to register producers. And after two epoch, the super nodes will be generated, and produce blocks.
