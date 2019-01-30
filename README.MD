@@ -1,6 +1,6 @@
 ## explanation of each file
-- #### **ft**:
-  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases.                                                   
+- #### **ft(NOT latest version)**:
+  executable file of fractal, different release version could be downloaded from:https://github.com/fractalplatform/fractal/releases.                                                  
   
 ```
 ft --help   // get help info
