@@ -1,3 +1,8 @@
+if [ $# -ne 2 ];then
+    echo $0 portStart portEnd  // include start and end port 
+    exit 2
+fi
+
 portStart=$1
 portEnd=$2
 
