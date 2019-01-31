@@ -116,5 +116,5 @@ steps:
 2. Copy notes.txt which has been generated on your first server to your other servers.
 3. Run start.sh on these servers metioned on step 2.
 4. Use genesis account creates new accounts and transfer asset to them.
-> Genesis account is configured in genesis.json metioned above.  And we will lanuch a website for you to accomplish these operators conveniently.  Just now, you should use RPC to accomplish these operators.
+> Genesis account is configured in genesis.json metioned above.  And we will lanuch a website for you to accomplish these operators conveniently.  Right now, you should use RPC to accomplish these operators.
 5. Use these new accounts to register producers. And after two epoch, the super nodes will be generated, and produce blocks.
